@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Harsh Kashyap - Automation & Java Expert</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+    
+    <style>
+        .material-symbols-outlined {
+            font-family: 'Material Symbols Outlined';
+            font-weight: normal;
+            font-style: normal;
+            font-size: 24px;
+            line-height: 1;
+            letter-spacing: normal;
+            text-transform: none;
+            display: inline-block;
+            white-space: nowrap;
+            word-wrap: normal;
+            direction: ltr;
+            -webkit-font-feature-settings: 'liga';
+            -webkit-font-smoothing: antialiased;
+        }
+        
+        @keyframes gradient-shift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        .animate-gradient {
+            background-size: 200% 200%;
+            animation: gradient-shift 15s ease infinite;
+        }
+
+        /* Pure CSS High-End 3D Text Effect */
+        .text-3d-premium {
+            color: #FF9A8B;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: -0.03em;
+            text-shadow: 
+                0 1px 0 #E5D7D3,
+                0 2px 0 #DBCECA,
+                0 3px 0 #D2C5C1,
+                0 4px 0 #C8BBB8,
+                0 5px 0 #BFB2AF,
+                0 6px 1px rgba(0,0,0,.1),
+                0 0 5px rgba(0,0,0,.1),
+                0 1px 3px rgba(0,0,0,.3),
+                0 3px 5px rgba(0,0,0,.2),
+                0 5px 10px rgba(0,0,0,.25),
+                0 10px 10px rgba(0,0,0,.2),
+                0 20px 20px rgba(0,0,0,.15);
+        }
+    </style>
+
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "primary": "#FF9A8B",
+                    "primary-container": "#FFD6CC",
+                    "on-primary-container": "#662818",
+                    "secondary": "#A2D2FF",
+                    "tertiary": "#FFC8DD",
+                    "background": "#FFFBF9",
+                    "surface": "#FFFFFF",
+                    "on-surface": "#332A28",
+                    "on-surface-variant": "#7A6864",
+                    "outline": "#E5D7D3",
+                    "mint": "#BDE0FE",
+                    "peach": "#FFCBB5",
+                    "lavender": "#E6C9FF"
+            },
+            "borderRadius": {
+                    "DEFAULT": "24px",
+                    "lg": "32px",
+                    "xl": "40px",
+                    "2xl": "48px",
+                    "full": "9999px"
+            },
+            "boxShadow": {
+                    "soft": "0 20px 40px -10px rgba(0,0,0,0.04), 0 8px 16px -4px rgba(0,0,0,0.02)",
+                    "glow": "0 0 40px rgba(255, 154, 139, 0.15)"
+            }
+          },
+        },
+      }
+    </script>
+</head>
+<body class="bg-background text-on-surface font-sans antialiased overflow-x-hidden selection:bg-primary-container selection:text-on-primary-container relative">
+
+    <!-- Abstract Pastel Background Gradients -->
+    <div class="fixed inset-0 overflow-hidden pointer-events-none -z-20">
+        <div class="absolute top-[-10%] left-[-10%] w-[50%] h-[50%] rounded-full bg-peach/30 blur-[120px]"></div>
+        <div class="absolute top-[20%] right-[-10%] w-[60%] h-[60%] rounded-full bg-lavender/20 blur-[150px]"></div>
+        <div class="absolute bottom-[-20%] left-[20%] w-[70%] h-[70%] rounded-full bg-mint/30 blur-[140px]"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="fixed top-6 left-1/2 -translate-x-1/2 w-[95%] max-w-7xl rounded-full bg-white/60 backdrop-blur-2xl shadow-soft z-50 flex justify-between items-center py-4 px-8 border-none">
+        <a class="font-extrabold text-2xl tracking-tighter text-primary flex items-center gap-2 hover:scale-105 transition-transform" href="#">
+            <span>HK.DEV</span>
+        </a>
+        <div class="hidden md:flex items-center gap-8">
+            <a class="text-primary font-bold scale-95 active:scale-90 transition-transform" href="#home">Home</a>
+            <a class="text-on-surface-variant font-bold hover:text-primary transition-colors duration-300 scale-95 active:scale-90 transition-transform" href="#highlights">Highlights</a>
+            <a class="text-on-surface-variant font-bold hover:text-primary transition-colors duration-300 scale-95 active:scale-90 transition-transform" href="#tech-stack">Tech Stack</a>
+        </div>
+        <div class="flex items-center gap-4">
+            <a class="bg-primary text-white shadow-glow font-bold px-8 py-3 rounded-full hover:scale-105 transition-transform duration-300" href="mailto:hk3867232@gmail.com">
+                Get In Touch
+            </a>
+        </div>
+    </nav>
+
+    <main class="max-w-[1728px] mx-auto w-full">
+        <!-- Section 1: Hero -->
+        <section id="home" class="relative pt-56 pb-24 px-8 md:px-16 min-h-[90vh] flex flex-col items-center justify-center text-center overflow-hidden">
+            <div class="inline-flex items-center gap-3 bg-white/80 backdrop-blur-xl rounded-full px-5 py-2.5 mb-10 shadow-soft">
+                <span class="bg-tertiary text-on-surface text-xs font-extrabold px-3 py-1.5 rounded-full uppercase shadow-sm">ACTIVE 24/7</span>
+                <span class="text-sm text-on-surface font-bold">Smart Agent Systems Enabled</span>
+            </div>
+            
+            <!-- 3D Name Typography Implementation -->
+            <div class="text-5xl md:text-8xl mb-4 tracking-tighter text-3xl font-black text-3xl-premium py-4">
+                Harsh Kashyap
+            </div>
+
+            <h1 class="text-4xl md:text-6xl font-black tracking-tighter text-on-surface max-w-4xl mb-6 drop-shadow-sm leading-tight">
+                Build Beyond Limits with <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-tertiary">Java &amp; Automation</span>
+            </h1>
+            <p class="text-lg md:text-xl text-on-surface-variant max-w-2xl mb-12 font-medium">
+                Turning complex workflows into simple backend pipelines, robust Java enterprise applications, autonomous AI runtimes, and automated communication bridges.
+            </p>
+            
+            <!-- Quick Connect Container -->
+            <div class="w-full max-w-[870px] bg-white rounded-[40px] shadow-soft p-8 mb-10 border-none text-left">
+                <div class="flex flex-col gap-4">
+                    <div class="text-xl font-bold text-on-surface px-2">Launch an Intelligent System Architecture</div>
+                    <p class="text-on-surface-variant px-2 text-sm md:text-base">Need automated backend services? Deploy multi-threaded Java applications, process custom webhooks, or scale runtime automation scripts seamlessly.</p>
+                    <div class="flex items-center justify-between pt-4 border-t-2 border-outline/30">
+                        <div class="flex items-center gap-3">
+                            <div class="flex items-center gap-2 bg-background rounded-full px-5 py-3 shadow-sm">
+                                <span class="text-sm text-on-surface-variant font-bold">Java + Python + n8n Layer</span>
+                                <span class="material-symbols-outlined text-[24px] text-primary">toggle_on</span>
+                            </div>
+                        </div>
+                        <a href="mailto:hk3867232@gmail.com" class="bg-primary text-white rounded-full w-14 h-14 flex items-center justify-center shadow-glow hover:scale-105 transition-transform">
+                            <span class="material-symbols-outlined">arrow_upward</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Minimal Gradient Slogan -->
+        <section class="py-24 px-8 md:px-16 text-center">
+            <h2 class="text-4xl md:text-6xl font-black text-on-surface tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-primary via-tertiary to-secondary">
+                Infrastructure that triggers instantly...
+            </h2>
+        </section>
+
+        <!-- Section 3: Portfolio Highlights -->
+        <section id="highlights" class="py-12 px-8 md:px-16 relative">
+            <div class="max-w-[1118px] mx-auto bg-white rounded-[48px] shadow-soft overflow-hidden flex flex-col md:flex-row min-h-[596px] border-none">
+                <div class="p-12 flex-1 flex flex-col justify-center">
+                    <span class="bg-secondary/20 text-on-surface font-extrabold text-xs tracking-wider px-4 py-2 rounded-full w-fit mb-8 uppercase">01 / 03 &bull; Core Project</span>
+                    <h3 class="text-3xl md:text-4xl font-extrabold text-on-surface mb-6 leading-tight">WhatsApp Chatbot &amp; Data Pipeline</h3>
+                    <p class="text-base md:text-lg text-on-surface-variant mb-10 max-w-md font-medium">
+                        Deploying smart conversational logic layers backed by live Webhook streams and robust Java/Python backend frameworks to ingest structured payloads and map workflows.
+                    </p>
+                    <a class="inline-flex items-center justify-center gap-2 bg-primary shadow-glow text-white font-bold px-8 py-4 rounded-full w-fit hover:scale-105 transition-transform" href="mailto:hk3867232@gmail.com">
+                        Deploy Now
+                    </a>
+                </div>
+                
+                <!-- Graphic Preview Side -->
+                <div class="flex-1 bg-gradient-to-br from-mint/20 to-lavender/20 relative overflow-hidden flex items-center justify-end p-8">
+                    <div class="relative z-10 w-[95%] h-[90%] mx-auto bg-white/80 backdrop-blur-xl rounded-[40px] shadow-soft flex flex-col overflow-hidden">
+                        <div class="flex items-center justify-center p-5 bg-white/50 border-b-2 border-outline/20">
+                            <div class="flex p-1.5 rounded-full bg-background shadow-inner">
+                                <button class="px-6 py-2 rounded-full text-xs font-bold bg-white text-primary shadow-sm">Live System</button>
+                            </div>
+                        </div>
+                        <div class="flex-1 p-8 space-y-6">
+                            <div class="flex gap-4">
+                                <div class="w-10 h-10 rounded-full bg-tertiary shadow-sm flex items-center justify-center">
+                                    <span class="material-symbols-outlined text-white text-[20px] font-bold">auto_awesome</span>
+                                </div>
+                                <div class="flex-1 space-y-2">
+                                    <div class="bg-background rounded-3xl rounded-tl-xl p-4 shadow-sm text-xs text-on-surface-variant font-medium">
+                                        Webhook payload validated. Processing structured Java class mappings...
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex gap-4 flex-row-reverse">
+                                <div class="w-10 h-10 rounded-full bg-secondary shadow-sm flex items-center justify-center">
+                                    <span class="material-symbols-outlined text-white text-[20px] font-bold">person</span>
+                                </div>
+                                <div class="flex-1 space-y-2 flex flex-col items-end">
+                                    <div class="bg-primary/10 rounded-3xl rounded-tr-xl p-4 shadow-sm text-xs text-on-primary-container font-medium w-3/4">
+                                        Trigger active backend runtime sequences.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt-6 p-3 bg-white shadow-soft rounded-full flex items-center gap-3">
+                                <span class="material-symbols-outlined text-primary text-[24px] ml-3">add_circle</span>
+                                <div class="flex-1 h-2 bg-outline/50 rounded-full"></div>
+                                <div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center shadow-glow">
+                                    <span class="material-symbols-outlined text-white text-[20px]">arrow_upward</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Node Workflow Engine -->
+        <section id="tech-stack" class="pt-12 pb-24 px-8 md:px-16 relative">
+            <div class="max-w-[1118px] mx-auto bg-white rounded-[48px] shadow-soft overflow-hidden flex flex-col md:flex-row min-h-[596px]">
+                <div class="p-12 flex-1 flex flex-col justify-center">
+                    <span class="bg-tertiary/30 text-on-surface font-extrabold text-xs tracking-wider px-4 py-2 rounded-full w-fit mb-8 uppercase">02 / 03 &bull; Logic Control</span>
+                    <h3 class="text-3xl md:text-4xl font-extrabold text-on-surface mb-6 leading-tight">n8n Node Workflows &amp; Java Runtimes</h3>
+                    <p class="text-base md:text-lg text-on-surface-variant mb-10 max-w-md font-medium">
+                        Robust automated engine handling your logic trees seamlessly. High-performance application layers, error handling loops, and automated environment configurations designed to run smoothly.
+                    </p>
+                </div>
+                <div class="flex-1 bg-gradient-to-tr from-peach/30 to-background relative overflow-hidden flex items-center justify-center p-8">
+                    <div class="relative z-10 w-full bg-white/90 backdrop-blur-2xl rounded-[40px] shadow-soft p-8 overflow-hidden">
+                        <div class="flex items-center justify-between mb-8 border-b-2 border-outline/20 pb-6">
+                            <div class="flex items-center gap-5">
+                                <div class="w-14 h-14 rounded-[20px] bg-primary/10 flex items-center justify-center shadow-sm">
+                                    <span class="material-symbols-outlined text-primary text-3xl">cloud_upload</span>
+                                </div>
+                                <div>
+                                    <span class="block text-on-surface font-black text-xl leading-none mb-1">Agent Deployment</span>
+                                    <span class="text-on-surface-variant text-[10px] font-bold uppercase tracking-widest bg-outline/20 px-2 py-1 rounded-md">v1.0.0-stable</span>
+                                </div>
+                            </div>
+                            <div class="flex flex-col items-end gap-2">
+                                <div class="text-[12px] font-black text-on-surface-variant uppercase tracking-wider">Health</div>
+                                <svg class="w-20 h-8 overflow-visible" viewbox="0 0 60 20">
+                                    <path d="M0 15 L10 12 L20 18 L30 8 L40 10 L50 4 L60 6" fill="none" stroke="#A2D2FF" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="space-y-6">
+                            <div class="space-y-3">
+                                <div class="flex items-center justify-between text-sm font-black">
+                                    <div class="flex items-center gap-3">
+                                        <div class="w-3 h-3 rounded-full bg-[#A2D2FF] shadow-[0_0_12px_rgba(162,210,255,0.8)]"></div>
+                                        <span class="text-on-surface">Runtime &amp; JVM Execution</span>
+                                    </div>
+                                    <span class="text-on-surface bg-outline/20 px-2 py-1 rounded-md">100%</span>
+                                </div>
+                                <div class="h-3 w-full bg-outline/30 rounded-full overflow-hidden">
+                                    <div class="h-full w-full bg-secondary rounded-full"></div>
+                                </div>
+                            </div>
+                            <div class="pt-4 space-y-4">
+                                <div class="flex items-center justify-between text-on-surface-variant text-xs font-bold bg-background p-3 rounded-2xl">
+                                    <div class="flex items-center gap-3">
+                                        <div class="w-8 h-8 rounded-full bg-mint flex items-center justify-center"><span class="material-symbols-outlined text-[16px] text-white">verified_user</span></div>
+                                        <span>Java Environment Complied</span>
+                                    </div>
+                                    <span class="opacity-60 bg-white px-2 py-1 rounded-md">Active</span>
+                                </div>
+                                <div class="flex items-center justify-between text-on-surface-variant text-xs font-bold bg-background p-3 rounded-2xl">
+                                    <div class="flex items-center gap-3">
+                                        <div class="w-8 h-8 rounded-full bg-peach flex items-center justify-center"><span class="material-symbols-outlined text-[16px] text-white">storage</span></div>
+                                        <span>Workflow Node Triggers Configured</span>
+                                    </div>
+                                    <span class="opacity-60 bg-white px-2 py-1 rounded-md">Synced</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center padding p-10 bg-white border-t border-outline/30 text-on-surface-variant text-sm font-medium">
+        <p>&copy; 2026 Harsh Kashyap. All rights reserved. &bull; Kanpur Dehat, UP, India</p>
+    </footer>
+
+</body>
+</html>
